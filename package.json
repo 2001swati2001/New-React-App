@@ -1,5 +1,5 @@
 {
-  "homepage": "http://2001swati2001.github.io/React-Curd-App",
+  "homepage": "http://2001swati2001.github.io/New-React-App",
   "name": "users",
   "version": "0.1.0",
   "private": true,
@@ -20,7 +20,7 @@
   "scripts": {
     "predeploy":"npm run build",
     "deploy":"gh-pages -d build",
-    "start": "node server.js",
+    "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"

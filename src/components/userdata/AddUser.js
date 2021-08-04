@@ -23,7 +23,7 @@ function AddUser() {
 
         const onSubmit = async e => {
             e.preventDefault();
-            await axios.post("http://localhost:3333/users", user);
+            await axios.post("https://fake-server-apps.herokuapp.com/users/", user);
             alert('User Added');
             history.push("/");
           };

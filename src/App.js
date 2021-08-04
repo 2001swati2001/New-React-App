@@ -14,10 +14,11 @@ function App() {
 
       <BrowserRouter>
         <Navbar />
+        
           <Switch>
             
             <Route exact path="/"> 
-              <Home /> 
+            <Home /> 
             </Route>
 
             <Route exact path="/users/add"> 

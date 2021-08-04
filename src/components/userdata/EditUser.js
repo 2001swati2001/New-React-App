@@ -26,13 +26,13 @@ function EditUser() {
           }, []);
 
         const loadUser = async () => {
-            const result = await axios.get(`http://localhost:3333/users/${id}`);
+            const result = await axios.get(`https://fake-server-apps.herokuapp.com/users/${id}`);
             setUser(result.data);
           };
 
         const onSubmit = async e => {
             e.preventDefault();
-            await axios.put(`http://localhost:3333/users/${id}`, user);
+            await axios.put(`https://fake-server-apps.herokuapp.com/users/${id}`, user);
             history.push("/");
           };
 

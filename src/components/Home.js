@@ -18,12 +18,12 @@ function Home() {
     },[]);
 
     const loadUser = async() =>{
-        const result=await axios.get("http://localhost:3333/users/");
+        const result=await axios.get("https://fake-server-apps.herokuapp.com/users/");
         setUser(result.data)
     };
 
     const deleteUser = async id => {
-        await axios.delete(`http://localhost:3333/users/${id}`);
+        await axios.delete(`https://fake-server-apps.herokuapp.com/users/${id}`);
         loadUser();
       };
 

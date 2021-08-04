@@ -16,7 +16,7 @@ function ViewUser() {
         loadUser();
       }, []);
       const loadUser = async () => {
-        const res = await axios.get(`http://localhost:3333/users/${id}`);
+        const res = await axios.get(`https://fake-server-apps.herokuapp.com/users/${id}`);
         setUser(res.data);
       };
       return (
