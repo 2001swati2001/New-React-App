@@ -17,15 +17,15 @@ function App() {
         
           <Switch>
             
-            <Route exact path="/New-React-App"> 
+            <Route exact path="/"> 
             <Home /> 
             </Route>
 
-            <Route exact path="/New-React-App/users/add"> 
+            <Route exact path="/users/add"> 
               <AddUser /> 
             </Route>
 
-            <Route exact path="/New-React-App/users/edit/:id"> 
+            <Route exact path="/users/edit/:id"> 
               <EditUser /> 
             </Route>
 
